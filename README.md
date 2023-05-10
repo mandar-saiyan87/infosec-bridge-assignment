@@ -8,3 +8,5 @@
 Download repository </br>
 run npm install </br>
 npm start </br>
+
+On SignIn screen login button and navigations disabled, It will get active once username and passowrd entered.
