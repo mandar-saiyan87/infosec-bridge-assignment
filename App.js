@@ -3,6 +3,12 @@ import { Text, View } from 'react-native';
 import { useCallback } from 'react';
 import { useFonts } from 'expo-font';
 import * as SplashScreen from 'expo-splash-screen';
+import { SafeAreaView } from 'react-native-safe-area-context';
+
+import WelcomeScreen from './src/screens/WelcomeScreen';
+import SignInScreen from './src/screens/SignInScreen';
+import RegistrationScreen from './src/screens/RegistrationScreen';
+import ProfileScreen from './src/screens/ProfileScreen';
 
 
 SplashScreen.preventAutoHideAsync();
@@ -29,10 +35,12 @@ export default function App() {
   }
 
   return (
-    <View className='flex-1 items-center justify-center' onLayout={onLayoutRootView}>
-      <Text className='text-blue-400'>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <SafeAreaView onLayout={onLayoutRootView} className='flex-1'>
+      {/* <WelcomeScreen /> */}
+      {/* <SignInScreen /> */}
+      {/* <RegistrationScreen /> */}
+      <ProfileScreen />
+    </SafeAreaView>
   );
 }
 
