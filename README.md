@@ -4,6 +4,6 @@
 ## I haven't considered password and form validations for now
 ## APK file included
 
-Download repository
-run npm install
-npm start
+Download repository </br>
+run npm install </br>
+npm start </br>
