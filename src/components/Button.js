@@ -1,3 +1,5 @@
+// Button Component for all buttons
+
 import { View, Text, Pressable } from 'react-native'
 import React from 'react'
 

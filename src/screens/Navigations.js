@@ -1,5 +1,8 @@
 import { View, Text } from 'react-native'
 import React from 'react'
+
+// Installed and imported Navigations and stack from React Native Navigation package
+
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
@@ -13,8 +16,13 @@ const Stack = createNativeStackNavigator();
 
 const Navigations = () => {
   return (
+
+    // Navigation and Screens
+
     <NavigationContainer>
       <Stack.Navigator>
+
+        {/* Screen Headres are hidden */}
         <Stack.Screen name='Home' component={WelcomeScreen} options={{
           headerShown: false
         }} />

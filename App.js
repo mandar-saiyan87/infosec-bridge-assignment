@@ -11,6 +11,7 @@ SplashScreen.preventAutoHideAsync();
 
 export default function App() {
 
+  // Installed Rubik font
   const [fontsLoaded] = useFonts({
     'Rubik': require('./assets/fonts/Rubik-Regular.ttf'),
     'Rubik-black': require('./assets/fonts/Rubik-Black.ttf'),
@@ -31,6 +32,8 @@ export default function App() {
   }
 
   return (
+    // Navigation imported from ./src/Navigations.js
+
     <SafeAreaView onLayout={onLayoutRootView} className='flex-1'>
       <Navigations></Navigations>
     </SafeAreaView>

@@ -1,11 +1,14 @@
+// TextField component for all input fields and forms
+
 import { View, Text, TextInput } from 'react-native'
 import React, { useState, useEffect } from 'react'
 
 const TextInputField = ({ placeholder, label, styles, label2, getData, name, secureText }) => {
 
-
+  // State for TextInput values
   const [text, setText] = useState("")
 
+  //Passing data to parent component
   useEffect(() => {
     getData?.(name, text)
   }, [text])
