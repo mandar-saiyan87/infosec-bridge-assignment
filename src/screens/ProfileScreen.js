@@ -24,9 +24,9 @@ const ProfileScreen = () => {
             <Text className='font-Rubik text-sm text-[#1D2226]'>Marry@Gmail.Com</Text>
           </View>
         </View>
-        <Text className='text-left'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ut fuga repellat vero consectetur amet repellendus harum maxime obcaecati.</Text>
+        <Text className='text-left font-Rubik text-sm'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente libero mollitia eum placeat. Dicta, quisquam culpa. Modi, enim esse?</Text>
       </View>
-      <View className='border-t-[#CBCBCB] border-t-[1px] border-b-[#CBCBCB] border-b-[1px] border-dashed h-[65%]'></View>
+      <View className='border-t-[#CBCBCB] border-t-[1px] border-b-[#CBCBCB] border-b-[1px] border-dashed h-[63%]'></View>
     </View>
   )
 }

@@ -5,11 +5,7 @@ import { useFonts } from 'expo-font';
 import * as SplashScreen from 'expo-splash-screen';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-import WelcomeScreen from './src/screens/WelcomeScreen';
-import SignInScreen from './src/screens/SignInScreen';
-import RegistrationScreen from './src/screens/RegistrationScreen';
-import ProfileScreen from './src/screens/ProfileScreen';
-
+import Navigations from './src/screens/Navigations';
 
 SplashScreen.preventAutoHideAsync();
 
@@ -36,10 +32,7 @@ export default function App() {
 
   return (
     <SafeAreaView onLayout={onLayoutRootView} className='flex-1'>
-      {/* <WelcomeScreen /> */}
-      {/* <SignInScreen /> */}
-      {/* <RegistrationScreen /> */}
-      <ProfileScreen />
+      <Navigations></Navigations>
     </SafeAreaView>
   );
 }

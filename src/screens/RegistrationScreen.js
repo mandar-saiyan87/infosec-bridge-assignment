@@ -1,7 +1,7 @@
 import { View, Text, TextInput, ScrollView } from 'react-native'
 import React, { useState } from 'react'
 import Button from '../components/Button'
-import RegistrationInputField from '../components/RegistrationInputField'
+import TextInputField from '../components/TextInputField'
 import { RadioButton } from 'react-native-paper';
 
 
@@ -15,12 +15,12 @@ const RegistrationScreen = () => {
     <View className='flex-1 bg-[#F7F8F9] px-5 pt-7'>
       <Text className='w-[60%] font-Rubik-Medium text-[#1D2226] text-2xl mb-6'>Create your PopX account</Text>
 
-      <RegistrationInputField placeholder={'Enter full name'} label={'Full Name'} styles={'mb-5'} />
-      <RegistrationInputField placeholder={'Enter phone number'} label={'Phone Number'} styles={'mb-5'} />
-      <RegistrationInputField placeholder={'Enter email address'} label={'Email Address'} styles={'mb-5'} />
-      <RegistrationInputField placeholder={'Enter password'} label={'Password'} styles={'mb-5'} />
-      <RegistrationInputField placeholder={'Enter company name'} label={'Company Name'} styles={'mb-3'} />
-      <Text className='ml-1'>Are you an Agency?</Text>
+      <TextInputField placeholder={'Enter full name'} label={'Full Name'} label2={'*'} styles={'mb-5'} />
+      <TextInputField placeholder={'Enter phone number'} label={'Phone Number'} label2={'*'} styles={'mb-5'} />
+      <TextInputField placeholder={'Enter email address'} label={'Email Address'} label2={'*'} styles={'mb-5'} />
+      <TextInputField placeholder={'Enter password'} label={'Password'} label2={'*'} styles={'mb-5'} />
+      <TextInputField placeholder={'Enter company name'} label={'Company Name'} label2={'*'} styles={'mb-5'} />
+      <Text className='ml-1 font-Rubik'>Are you an Agency?</Text>
       <View className='flex-row'>
         <View className='flex-row items-center'>
           <RadioButton
